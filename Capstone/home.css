@@ -8,7 +8,7 @@
 
 /* Body */
 body {
-    background-color: #f7e6c2;
+    background: linear-gradient(to bottom right, #ffe8a1, #f7d28b);
     color: #333;
     display: flex;
     flex-direction: column;
@@ -19,29 +19,23 @@ body {
 .header {
     background-color: #d97706;
     color: white;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center; /* Ensures vertical alignment */
-    gap: 20px; /* Increases the space between the logo and title */
-}
-
-.logo-container {
+    padding: 15px 20px;
     display: flex;
     align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo-container img {
-    width: 50px; /* Adjust the size if needed */
-    height: 50px;
-    border-radius: 50%; /* Optional: Makes the logo circular */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
 }
 
 .header h1 {
-    font-size: 24px;
-    line-height: 1; /* Prevents extra vertical spacing */
-    margin: 0; /* Removes default margin */
+    font-size: 28px;
 }
-
 
 /* Main Container */
 .main-container {
@@ -49,20 +43,21 @@ body {
     flex: 1;
     padding: 20px;
     gap: 20px;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
 }
 
 /* News Section */
 .news-banner {
-    width: 25%;
-    background-color: #ffe8a1;
+    width: 30%;
+    background-color: rgba(255, 232, 161, 0.9);
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .news-banner h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 15px;
     color: #d97706;
 }
 
@@ -71,18 +66,26 @@ body {
 }
 
 .news-banner ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.news-banner ul li img.news-icon {
+    width: 24px;
+    height: 24px;
 }
 
 .news-banner ul li a {
     text-decoration: none;
     color: #6b4f1a;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .news-banner ul li a:hover {
     color: #b56304;
-    text-decoration: underline;
 }
 
 /* Main Content */
@@ -97,35 +100,38 @@ body {
 .content h2 {
     color: #d97706;
     margin-bottom: 20px;
+    font-size: 22px;
 }
 
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    gap: 20px;
 }
 
 .service-item {
     text-align: center;
-    background-color: #ffe8a1;
+    background-color: rgba(255, 232, 161, 0.9);
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service-item img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
 }
 
 .service-item h3 {
     color: #6b4f1a;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
