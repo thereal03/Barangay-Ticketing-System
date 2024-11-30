@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f7e6c2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #d97706;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 20px; /* Increases the space between the logo and title */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust the size if needed */
+    height: 50px;
+    border-radius: 50%; /* Optional: Makes the logo circular */
+}
+
+.header h1 {
+    font-size: 24px;
+    line-height: 1; /* Prevents extra vertical spacing */
+    margin: 0; /* Removes default margin */
+}
+
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* News Section */
+.news-banner {
+    width: 25%;
+    background-color: #ffe8a1;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-banner h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #d97706;
+}
+
+.news-banner ul {
+    list-style-type: none;
+}
+
+.news-banner ul li {
+    margin-bottom: 10px;
+}
+
+.news-banner ul li a {
+    text-decoration: none;
+    color: #6b4f1a;
+    transition: color 0.3s ease;
+}
+
+.news-banner ul li a:hover {
+    color: #b56304;
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #d97706;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.service-item {
+    text-align: center;
+    background-color: #ffe8a1;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    color: #6b4f1a;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #d97706;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

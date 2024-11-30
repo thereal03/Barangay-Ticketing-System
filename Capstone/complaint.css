@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f7e6c2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #d97706;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 24px;
+    line-height: 1;
+    margin: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust the size if needed */
+    height: 50px;
+    border-radius: 50%; /* Optional: Makes the logo circular */
+}
+
+/* Main Container */
+.main-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-container h2 {
+    color: #d97706;
+    margin-bottom: 10px;
+}
+
+.main-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Form Styling */
+.complaint-form .form-group {
+    margin-bottom: 20px;
+}
+
+.complaint-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #6b4f1a;
+}
+
+.complaint-form input,
+.complaint-form select,
+.complaint-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #d9b382;
+    border-radius: 5px;
+    background: #fef8e1;
+}
+
+.complaint-form textarea {
+    resize: none;
+}
+
+.complaint-form input[type="file"] {
+    padding: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #d97706;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #b56304;
+}
+
+/* Footer */
+.footer {
+    background-color: #d97706;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
