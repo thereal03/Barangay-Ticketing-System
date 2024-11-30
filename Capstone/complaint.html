@@ -19,20 +19,24 @@
         <p>Submit your complaint, and we'll assign a ticket for tracking and resolution.</p>
 
         <!-- Complaint Form -->
-        <form action="complaint-submitted.html" method="POST" class="complaint-form">
+        <form action="complaint-submitted.html" method="POST" class="complaint-form" id="complaintForm">
             <div class="form-group">
                 <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required aria-describedby="full-name-tooltip">
+                <span id="full-name-tooltip" class="tooltip">Please enter your full name.</span>
+                <small class="error-message" id="name-error">Name is required</small>
             </div>
 
             <div class="form-group">
                 <label for="contact-info">Contact Information:</label>
-                <input type="email" id="contact-info" name="contact-info" placeholder="Enter your email or phone number" required>
+                <input type="email" id="contact-info" name="contact-info" placeholder="Enter your email or phone number" required aria-describedby="contact-info-tooltip">
+                <span id="contact-info-tooltip" class="tooltip">Provide a valid email address or phone number.</span>
+                <small class="error-message" id="contact-error">Please enter a valid email or phone number</small>
             </div>
 
             <div class="form-group">
                 <label for="category">Complaint Category:</label>
-                <select id="category" name="category" required>
+                <select id="category" name="category" required aria-describedby="category-tooltip">
                     <option value="" disabled selected>Select a category</option>
                     <option value="noise">Noise Complaint</option>
                     <option value="neighbor">Neighbor Dispute</option>
@@ -40,11 +44,15 @@
                     <option value="road">Road Maintenance</option>
                     <option value="others">Others</option>
                 </select>
+                <span id="category-tooltip" class="tooltip">Select the category that best describes your complaint.</span>
+                <small class="error-message" id="category-error">Category is required</small>
             </div>
 
             <div class="form-group">
                 <label for="description">Complaint Description:</label>
-                <textarea id="description" name="description" rows="5" placeholder="Provide details of your complaint..." required></textarea>
+                <textarea id="description" name="description" rows="5" placeholder="Provide details of your complaint..." required aria-describedby="description-tooltip"></textarea>
+                <span id="description-tooltip" class="tooltip">Describe the issue clearly.</span>
+                <small class="error-message" id="desc-error">Description is required</small>
             </div>
 
             <div class="form-group">
@@ -56,8 +64,19 @@
         </form>
     </div>
 
+    <!-- Modal for Success Message -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <h3>Complaint Submitted Successfully!</h3>
+            <p>Your complaint has been successfully submitted. You will receive an update shortly.</p>
+            <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
     <footer class="footer">
         <p>© 2024 Barangay Portal. All Rights Reserved.</p>
     </footer>
+
+    <script src="complaint.js"></script>
 </body>
 </html>
