@@ -11,8 +11,8 @@ The **Barangay Ticketing System** is a web-based platform designed to streamline
 - **Notifications:** Notifications to keep residents informed about the status of their reports.
 - **Data Analytics:** Generate reports and insights to identify recurring issues and improve service.
 
-License
+# License
 This project is licensed under the MIT License.
 
-Contact
+# Contact
 For questions or suggestions, please contact us at [Holy Angel University].
